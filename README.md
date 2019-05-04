@@ -1,61 +1,53 @@
-# Try Out Development Containers: .NET Core
+# Try Out VS Cloud Environments: .NET Core
 
-This is a sample project that lets you try out the **[VS Code Remote - Containers](https://aka.ms/vscode-remote/containers)** extension in a few easy steps.
-
-> **Note:** If you're following the quick start, you can jump to the [Things to try](#things-to-try) section. 
-
-## Setting up the development container
-
-Follow these steps to open this sample in a container:
-
-1. If this is your first time using a development container, please follow the [getting started steps](https://aka.ms/vscode-remote/containers/getting-started).
-
-2. If you're not yet in a development container:
-   - Clone this repository.
-   - Press <kbd>F1</kbd> and select the **Remote-Containers: Open Folder in Container...** command.
-   - Select the cloned copy of this folder, wait for the container to start, and try things out!
+This is a sample project that lets you try out VS Cloud Environments in a few easy steps.
    
 ## Things to try
 
-One you have this sample opened in a container, you'll be able to work with it like you would locally.
+This sample has been cloned into your VS Cloud Environment. You're able to work with it like you would any local code.
 
 Some things to try:
 
-1. **Restore Packages:** When notified by the C# extension to install packages, click Restore to trigger the process from inside the container!
-2. **Edit:**
+1. **Install Language Extensions**
+  - Open `Program.cs`
+  - Install the recommended C# extension
+  - View the list of `Cloud Environment - Installed` extensions
+    > Note: The C# extension has been installed in the remote environment
+  - Reload VS Code
+    > Note: VS Code automatically reconnects to your cloud environment
+
+2. **Use dotnet:** 
+  - Restore NuGet packages
+  - Press ctrl_shift+B to run the build task
+
+3. **Edit code:**
    - Open `Program.cs`
-   - Try adding some code and check out the language features.
-3. **Terminal:** Press <kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>\`</kbd> and type `dotnet --version` and other Linux commands from the terminal window.
-4. **Build, Run, and Debug:**
+   - Try adding some code and check out the IntelliSense
+
+4. **Terminal:** 
+  - Press ctrl+shift+[backtick] to open the terminal
+  - From the terminal run `dotnet --version`
+    > Note: dotnet is not installed on the local machine, yet you're able to use it! 
+  - Type other Linux commands (`uname`, `ls`, etc.) to interact with the underlying environment
+
+5. **Build, Run, and Debug:**
    - Open `Program.cs`
+   - Change the message to "Hello {your name} from ASP.NET Code!"
    - Add a breakpoint (e.g. on line 21).
-   - Press <kbd>F5</kbd> to launch the app in the container.
-   - Once the breakpoint is hit, try hovering over variables, examining locals, and more.
-   - Continue, then open a local browser and go to `http://localhost:9000` and note you can connect to the server in the container.
-5. **Forward another port:**
+   - Press F5 to launch the app
+   - Once the breakpoint is hit, try hovering over variables, examining locals, and other debugging tasks
+   - Continue, then open a local browser and go to `http://localhost:9000` and note you can't connect to the server
+
+6. **Forward port:**
    - Stop debugging and remove the breakpoint.
    - Open `Program.cs`
    - Change the server port to 5000. (`.UseUrls("http://0.0.0.0:5000")`)
-   - Press <kbd>F5</kbd> to launch the app in the container.
-   - Press <kbd>F1</kbd> and run the **Remote-Containers: Forward Port from Container...** command.
-   - Select port 5000.
-   - Click "Open Browser" in the notification that appears to access the web app on this new port.
+   - Press F5 to launch the app in the container.
+   - Press F1 and run the **Cloud Environments: Forward Port from Environment...** command
+     - Enter port 5000
+     - Name it anything you'd like
+     - View the forwarded ports in the Environment Details panel
+   - Open http://localhost:5000/ and show the booth attendant the running site
 
-## Contributing
-
-This project welcomes contributions and suggestions. Most contributions require you to agree to a
-Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
-the rights to use your contribution. For details, visit https://cla.microsoft.com.
-
-When you submit a pull request, a CLA-bot will automatically determine whether you need to provide
-a CLA and decorate the PR appropriately (e.g., label, comment). Simply follow the instructions
-provided by the bot. You will only need to do this once across all repos using our CLA.
-
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
-contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
-
-## License
-
-Copyright © Microsoft Corporation All rights reserved.<br />
-Licensed under the MIT License. See LICENSE in the project root for license information.
+7. **Finish**
+  - Complete steps 5-7 on the Challenge Worksheet
