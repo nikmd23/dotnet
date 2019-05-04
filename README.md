@@ -8,7 +8,7 @@ This sample has been cloned into your VS Cloud Environment. You're able to work 
 
 Some things to try:
 
-1. **Install Language Extensions**
+1. **Install language extensions**
   - Open `Program.cs`
   - Install the recommended C# extension
   - View the list of `Cloud Environment - Installed` extensions
