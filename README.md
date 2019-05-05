@@ -18,7 +18,7 @@ Some things to try:
 
 2. **Use dotnet:** 
   - Restore NuGet packages
-  - Press ctrl_shift+B to run the build task
+  - Press ctrl+shift+B to run the build task
 
 3. **Edit code:**
    - Open `Program.cs`
@@ -29,6 +29,7 @@ Some things to try:
   - From the terminal run `dotnet --version`
     > Note: dotnet is not installed on the local machine, yet you're able to use it! 
   - Type other Linux commands (`uname`, `ls`, etc.) to interact with the underlying environment
+    > Note: The local machine is Windows, yet you're able to issue Linux commands! 
 
 5. **Build, Run, and Debug:**
    - Open `Program.cs`
@@ -43,7 +44,7 @@ Some things to try:
    - Open `Program.cs`
    - Change the server port to 5000. (`.UseUrls("http://0.0.0.0:5000")`)
    - Press F5 to launch the app in the container.
-   - Press F1 and run the **Cloud Environments: Forward Port from Environment...** command
+   - Run the **Cloud Environments: Forward Port from Environment...** command
      - Enter port 5000
      - Name it anything you'd like
      - View the forwarded ports in the Environment Details panel
