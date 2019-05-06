@@ -33,7 +33,7 @@ Some things to try:
 
 5. **Build, Run, and Debug:**
    - Open `Program.cs`
-   - Change the message to "Hello {your name} from ASP.NET Code!"
+   - Change the message to "Hello {your name} from ASP.NET Core!"
    - Add a breakpoint (e.g. on line 21).
    - Press F5 to launch the app
    - Once the breakpoint is hit, try hovering over variables, examining locals, and other debugging tasks
