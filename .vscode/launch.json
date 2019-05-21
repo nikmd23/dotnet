@@ -8,7 +8,7 @@
             "name": ".NET Core Launch (web)",
             "type": "coreclr",
             "request": "launch",
-            "program": "dotnet",
+            "program": "${workspaceRoot}/bin/Debug/netcoreapp2.1/aspnetapp.dll",
             "args": ["run"],
             "cwd": "${workspaceFolder}",
         }
